@@ -1,0 +1,28 @@
+#-------- detaset path -------
+train_data_path: 
+- ../dataset/train/folksong_16note_8bar_text
+validation_data_path:
+- ../dataset/validation/folksong_16note_8bar_text
+test_data_path:
+- ../dataset/test/folksong_16note_8bar_text
+
+#------ input data setting ------
+data_length: 128
+input_names: ["right", "left"]
+input_shapes:
+  right: [2, 128, 88]
+  left: [2, 128, 88]
+
+#------ train parameter ------
+train_iteration: 5000 
+validation_interval: 1
+checkpoint_interval: 100
+batch_size: 64 
+sampling_size: 40 
+num_steps: 1000 # default: 1000
+learning_rate: 2e-5 # default: 2e-5
+text_condition: True 
+
+
+#pre-trained model path ※If you generate sampling, you must set this path.
+model_path: 

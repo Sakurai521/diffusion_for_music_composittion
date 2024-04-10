@@ -1,0 +1,5 @@
+defaults:
+- main: main
+- train: train
+- env: env
+- pretrain: pretrain

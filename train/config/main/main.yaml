@@ -1,0 +1,9 @@
+#------ main ------
+experiment_name: folksong_16note_8bar_polyffusion #saving this experiment name
+tags: Diffusion #wandbtag of 
+disable_cuda: False
+device: cuda:0
+seed: 42 
+
+#------- log ------
+wandb : False #wandbを使うか

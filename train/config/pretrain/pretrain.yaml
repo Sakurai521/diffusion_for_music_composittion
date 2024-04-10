@@ -1,0 +1,15 @@
+#------ pretrain(CLIP) setting ------
+#------ image data path ------
+train_image_data_path:
+- ../dataset/image/folksong_16note_8bar_text/train
+validation_image_data_path:
+- ../dataset/image/folksong_16note_8bar_text/validation
+test_image_data_path:
+- ../dataset/image/folksong_16note_8bar_text/test
+
+#------ setting ------
+train_iteration: 1000  
+validation_interval: 1 
+checkpoint_interval: 10 
+batch_size: 64 
+learning_rate: 1e-5 #default: 1e-5
