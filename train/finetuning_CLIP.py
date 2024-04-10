@@ -100,7 +100,7 @@ def run(cfg):
             save_loss["validation"] = loss_val
             params["loss"] = save_loss
             os.makedirs(f"{results_dir}/model", exist_ok=True)
-            np.save(f"{results_dir}/model/model_{itr+1}.npy", params)
+            torch.save(params, f"{results_dir}/model/model_{itr+1}.pt")
         
 
 
